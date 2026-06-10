@@ -7,7 +7,7 @@ Public repository to host code associated with *Getting Straight on Standard Err
 
 
 
-## Documentation for 1) above.
+## Documentation for 1 above
 
 ### Description
 `zprop.test` can be used for testing whether a population proportion is equal to a specified null value.  Notably, it also provides hypothesis intervals that are consistent with the associated z test statistic.  For reasons given in Section 4, this is currenlty written solely for the single-sample setting. 
