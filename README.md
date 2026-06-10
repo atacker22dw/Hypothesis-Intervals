@@ -1,1 +1,1 @@
-# Hypothesis-Intervals
+# Hypothesis Intervals
