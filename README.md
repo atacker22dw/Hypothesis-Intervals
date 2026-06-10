@@ -17,10 +17,10 @@ zprop.test(x, n, p0 = NULL,
           alternative = c("two.sided", "less", "greater"),
           conf.level = 0.95, digits = 5)
 ### Arguments
-x: number of success, the numerator of the sample proportion.  
-n: number of trials, the denominator of the sample proportion.  
-p0: the null hypothesized value (default is p0 = 0.5) of the population proportion.\\  
-alternative: a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less". 
+x: number of success, the numerator of the sample proportion.    
+n: number of trials, the denominator of the sample proportion.   
+p0: the null hypothesized value (default is p0 = 0.5) of the population proportion.    
+alternative: a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less".   
 conf.level: confidence level of the returned confidence interval. Must be a single number between 0 and 1. Only used when testing the null that a single proportion equals a given value, or that two proportions are equal; ignored otherwise.
 
 ### Value
