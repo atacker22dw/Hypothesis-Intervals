@@ -24,9 +24,9 @@ alternative: a character string specifying the alternative hypothesis, must be o
 conf.level: confidence level of the returned confidence interval. Must be a single number between 0 and 1. Only used when testing the null that a single proportion equals a given value, or that two proportions are equal; ignored otherwise.
 
 ### Value
-statistic: the value of z test statistic 
-p.value: the p-value of the test
-estimate: sample proportion x/n
+statistic: the value of z test statistic   
+p.value: the p-value of the test  
+estimate: sample proportion x/n  
 conf.int: a hypothesis interval at the specified conf.lvel.  That is, a confidence interval, using the p0 value in the standard error, such that it is appropriate for pronouncing on the associated hypothesis test.  
 
 
