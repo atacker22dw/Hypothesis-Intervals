@@ -5,6 +5,9 @@ zprop.test <- function(x,
                        conf.level = 0.95,
                        digits = 5) {
   
+  #update to truncate bounds of one-sided interval for proportion.  
+  #matches prop.test style of output
+  
   alternative <- match.arg(alternative)
   
   phat <- x / n
@@ -12,9 +15,7 @@ zprop.test <- function(x,
   # standard error under H0
   se0 <- sqrt(p0 * (1 - p0) / n)
   
-  
   z <- (phat - p0) / se0
-  
   
   p.value <- switch(
     alternative,
@@ -22,7 +23,6 @@ zprop.test <- function(x,
     "less"      = pnorm(z),
     "greater"   = 1 - pnorm(z)
   )
-  
   
   alpha <- 1 - conf.level
   
@@ -41,12 +41,11 @@ zprop.test <- function(x,
       phat + c(-1, 1) * zcrit * se0,
     
     "less" =
-      c(-Inf, phat + zcrit * se0),
+      c(0, min(1, phat + zcrit * se0)),
     
     "greater" =
-      c(phat - zcrit * se0, Inf)
+      c(max(0, phat - zcrit * se0), 1)
   )
-  
   
   cat("\n")
   cat("One-sample proportion z-test with null-based SE\n\n")
@@ -80,9 +79,9 @@ zprop.test <- function(x,
   )
   
   cat(
-    format(ci[1], digits = digits),
+    format(round(ci[1], digits), nsmall = digits),
     " ",
-    format(ci[2], digits = digits),
+    format(round(ci[2], digits), nsmall = digits),
     "\n",
     sep = ""
   )
