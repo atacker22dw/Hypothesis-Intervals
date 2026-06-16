@@ -5,6 +5,7 @@ Public repository to host code associated with *Getting Straight on Standard Err
 1) zprop.test.R main user-directed function.  Discussed in Section 2.4.  More documentation on this particular function below.
 2) two_sample_grid_search.R grid search for example of divergence in two-sample setting.  Discussed in Section 4.
 3) HIvsWald_nonrejection.R comparison of hypothesis interval and Wald non-rejection regions (Figure 2).  Discussed in Section 3.2.
+4) HIvsWald_disagreement_prob.R disagreement probability under H0 between the hypothesis interval and Wald rules (Figure 3).  Discussed in Section 3.2.
 
 
 
