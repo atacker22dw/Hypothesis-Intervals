@@ -12,7 +12,7 @@ Public repository to host code associated with *Getting Straight on Standard Err
 ## Documentation for 1 above
 
 ### Description
-`zprop.test` can be used for testing whether a population proportion is equal to a specified null value.  Notably, it also provides hypothesis intervals that are consistent with the associated z test statistic.  For reasons given in Section 4, this is currenlty written solely for the single-sample setting. 
+`zprop.test` can be used for testing whether a population proportion is equal to a specified null value.  Notably, it also provides hypothesis intervals that are consistent with the associated z test statistic.  For reasons given in Section 4, this is currently written solely for the single-sample setting. 
 
 ### Usage 
 zprop.test(x, n, p0 = NULL,
@@ -29,6 +29,6 @@ conf.level: confidence level of the returned confidence interval. Must be a sing
 statistic: the value of z test statistic   
 p.value: the p-value of the test  
 estimate: sample proportion x/n  
-conf.int: a hypothesis interval at the specified conf.lvel.  That is, a confidence interval, using the p0 value in the standard error, such that it is appropriate for pronouncing on the associated hypothesis test.  
+conf.int: a hypothesis interval at the specified conf.level.  That is, a confidence interval, using the p0 value in the standard error, such that it is appropriate for pronouncing on the associated hypothesis test.  
 
 
