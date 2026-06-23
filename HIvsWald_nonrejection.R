@@ -46,8 +46,8 @@ plot_acceptance_regions <- function(
     p0_min = 0.001,
     p0_max = 0.999,
     num_grid = 600,
-    output_pdf = "acceptance_regions_R.pdf",
-    output_png = "acceptance_regions_R.png"
+    output_pdf = "WaldvsHInonrej.pdf",
+    output_png = "WaldvsHInonrej.png"
 ) {
   dir.create(save_dir, recursive = TRUE, showWarnings = FALSE)
   
