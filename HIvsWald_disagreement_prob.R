@@ -77,8 +77,8 @@ plot_disagreement_probabilities <- function(
     n_max = 1000,
     p0_values = c(0.05, 0.10, 0.20, 0.30, 0.50),
     rolling_window = 30,
-    output_pdf = "disagreement_probabilities_R.pdf",
-    output_png = "disagreement_probabilities_R.png"
+    output_pdf = "WaldvsHI_prob.pdf",
+    output_png = "WaldvsHI_prob.png"
 ) {
   n_grid <- n_min:n_max
   
