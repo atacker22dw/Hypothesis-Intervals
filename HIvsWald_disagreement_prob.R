@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-save_dir <- "./figures"
+save_dir <- "./figures" # replace with actual path
 dir.create(save_dir, recursive = TRUE, showWarnings = FALSE)
 
 alpha <- 0.05
