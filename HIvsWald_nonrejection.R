@@ -5,7 +5,7 @@ library(grid)
 alpha <- 0.05
 z <- qnorm(1-alpha/2)
 
-save_dir <- "./figures"
+save_dir <- "./figures" # replace with actual path
 
 # function that receives a pair (p0, n) and returns the lower and upper
 # endpoints for both non-rejection regions, as well as the midpoint and half-widths
